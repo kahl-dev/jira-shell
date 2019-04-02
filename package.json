@@ -3,14 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "module": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": {
-    "name": "Patrick Kahl",
-    "email": "Kahl.Patrick@googlemail.com",
-    "url": "github.com/patrickkahl"
-  },
+  "author": "Patrick Kahl <Kahl.Patrick@googlemail.com> (github.com/patrickkahl)",
   "license": "ISC",
-  "dependencies": {}
+  "bin": {
+    "jira": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.19.0",
+    "datejs": "^1.0.0-rc3",
+    "esm": "^3.0.84",
+    "jira-connector": "^2.9.0",
+    "nconf": "^0.10.0",
+    "shelljs": "^0.8.3"
+  }
 }
